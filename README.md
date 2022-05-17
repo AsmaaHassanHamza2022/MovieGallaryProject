@@ -1,3 +1,12 @@
+![](https://github.com/Your_Repository_Name/Your_GIF_Name.gif)
+
+
+
+
+
+
+
+
 # CinemaShow
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.4.

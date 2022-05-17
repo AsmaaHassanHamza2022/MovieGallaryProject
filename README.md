@@ -1,4 +1,38 @@
-![](https://github.com/Your_Repository_Name/Your_GIF_Name.gif)
+![](https://github.com/AsmaaHassanHamza2022/MovieGallaryProject/blob/main/movieVideo.gif)
+
+
+
+
+
+Details
+========
+my movie cinema project is project display tranding movies&tv Shows&people
+this project contain
+------------------------
+1-authentication(Register &login)
+2-authrization(make sure that user login to access site pages)
+3-home page(dispaly  trending movies &tv shows &people)
+4-Movies & Tv &People pages for more Data
+5-Details Page for movie|Tv|people Details
+---------------------------------------------------------
+tools use in this project
+----------------------------
+backEnd
+--------------------
+authentication part
+================
+#mongodatabase ==> for make database
+#Node & express
+--------------------------------------------------------------
+movies part
+=============
+use the movie database free Api
+
+
+-------------------------------------------------------------
+front End 
+Angular13 ===>frontEnd frame work
+bootstrap ===>UI Frame work
 
 
 

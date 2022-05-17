@@ -1,0 +1,23 @@
+<div class="container-fluid">
+    <!-- movies part -->
+
+   <div class="row  m-auto justify-content-between my-5"  style="width:90%" >
+   <div class="col-md-4 my-4">
+       <div class="line border border-1 by-white w-25"></div>
+       <h2 class="text-white py-2 ">Tranging Movies to Watch Now</h2>
+       <div class="line border border-1 by-white w-75"></div>
+
+   </div>
+   <div *ngFor="let movie of allMovies" class="col-md-2 mx-2">
+       <div [routerLink]="['/details',movie.media_type,movie.id]" class="card bg-none m-3 " >
+           <img class="card-img-top" [src]='posterPrefix+movie.poster_path' alt="Movie poster">
+             <h3 class="h6 card-title text-center text-white my-2">{{movie.title}}</h3>
+            </div>
+       
+
+   </div>
+   </div>
+
+
+          
+</div>

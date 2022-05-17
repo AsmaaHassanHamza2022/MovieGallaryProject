@@ -1,1 +1,32 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color:#131722;
+}
+.line{
+    height:1px;
+    background-color:#a8a8a83d;
+}
+.heading-color,
+.bg-color{
+    color:#a8a8a83d;
+}
+.vot{
+    top:0;
+    right:1rem;
+    background-color: #24beaf;
+    padding:.5rem;
+}
+.names{
+    background-color: #24beaf;
+    padding:.5rem;
+}
+
+.card {
+    background-color: transparent;
+    border:none;
+    text-align: center;
+}
+.overview{
+    line-height: 1.5;
+}

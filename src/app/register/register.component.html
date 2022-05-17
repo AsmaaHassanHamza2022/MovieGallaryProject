@@ -1,0 +1,31 @@
+
+<div class="container-fluid ">
+    <form [formGroup]="RegisterForm" (ngSubmit)="RegisterNow(RegisterForm.value)"     class="w-75 m-auto my-3" >
+        <div class="mb-3">
+          <label for="FirstName" class="form-label">FirstName</label>
+          <input formControlName="First_name" type="text" class="form-control" id="FirstName" aria-describedby="fnameHelp">
+          <small *ngIf="RegisterForm.get('First_name')?.touched == true && RegisterForm.get('First_name')?.errors != null" class="text-danger p-3 ">Invaild Felid Please Enter Data</small>
+        </div>
+        <div class="mb-3">
+          <label for="LastName" class="form-label">LastName</label>
+          <input formControlName="Last_name" type="text" class="form-control" id="LastName" aria-describedby="LnameHelp">
+          <small *ngIf="RegisterForm.get('Last_name')?.touched == true && RegisterForm.get('Last_name')?.errors != null" class="text-danger p-3 ">Invaild Felid Please Enter Data</small>
+
+        </div>
+    
+        <div class="mb-3">
+        <label for="mail" class="form-label">Email address</label>
+        <input formControlName="Email" type="email" class="form-control" id="mail" aria-describedby="emailHelp">
+        <small *ngIf="RegisterForm.get('Email')?.touched == true && RegisterForm.get('Email')?.errors != null" class="text-danger p-3 ">Invaild Felid Please Enter Data</small>
+
+      </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input formControlName="Password" type="password" class="form-control" id="password">
+                  <small *ngIf="RegisterForm.get('Password')?.touched == true && RegisterForm.get('Password')?.errors != null" class="text-danger p-3 ">Invaild Felid Please Enter Data</small>
+
+        </div>
+        
+        <button [disabled]="RegisterForm.status=='INVALID'" type="submit" class="btn btn-primary">Register</button>
+      </form>
+</div>

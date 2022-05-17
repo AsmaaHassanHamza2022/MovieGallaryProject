@@ -1,0 +1,19 @@
+<div class="container-fluid">       
+       <!-- pepole part -->
+       <div class="row  m-auto justify-content-between my-5"  style="width:90%" >
+           <div class="col-md-4 my-4">
+               <div class="line border border-1 by-white w-25"></div>
+               <h2 class="text-white py-2 ">Tranging Pepole  Now</h2>
+               <div class="line border border-1 by-white w-75"></div>
+       
+           </div>
+           <div *ngFor="let person of allPeoples" class="col-md-2 mx-2 ">
+               <div class="card bg-none m-3 " >
+                   <img class="card-img-top" [src]='posterPrefix+person.profile_path || posterPrefix+person.backdrop_pathZ' alt="person profile">
+                     <h3 class="h6 card-title text-center text-white my-2">{{person.name}}</h3>
+                    </div>
+               
+       
+           </div>
+           </div>
+</div>

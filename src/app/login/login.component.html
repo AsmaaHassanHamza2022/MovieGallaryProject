@@ -1,0 +1,21 @@
+
+<div class="container-fluid ">
+  <p *ngIf="flag==true" class="alert alert-danger my-4 w-75 m-auto">{{LoginErrorMassage}}</p>
+    <form [formGroup]="LoginForm" (ngSubmit)="LoginNow(LoginForm.value)"     class="w-75 m-auto my-3" >
+        
+        <div class="mb-3">
+        <label for="mail" class="form-label text-white">Email address</label>
+        <input formControlName="Email" type="email" class="form-control" id="mail" aria-describedby="emailHelp">
+        <small *ngIf="LoginForm.get('Email')?.touched == true && LoginForm.get('Email')?.errors != null" class="text-danger p-3 ">Invaild Felid Please Enter Data</small>
+
+      </div>
+        <div class="mb-3">
+          <label for="password" class="form-label text-white">Password</label>
+          <input formControlName="Password" type="password" class="form-control" id="password">
+                  <small *ngIf="LoginForm.get('Password')?.touched == true && LoginForm.get('Password')?.errors != null" class="text-danger p-3 ">Invaild Felid Please Enter Data</small>
+
+        </div>
+        
+        <button [disabled]="LoginForm.status=='INVALID'" type="submit" class="btn btn-primary">Login</button>
+      </form>
+</div>
